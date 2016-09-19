@@ -50,7 +50,7 @@ module.exports = function(grunt) {
     // all of our configuration will go here
   });
 
-  grunt.registerTask('build', ['jshint', 'concat']);
+  grunt.registerTask('build', ['jshint', 'uglify']);
 
   // ===========================================================================
   // LOAD GRUNT PLUGINS ========================================================
