@@ -44,7 +44,7 @@ module.exports = function(grunt) {
 
     // for scripts, run jshint and uglify
     scripts: {
-      files: 'src/**/*.js', tasks: ['jshint', 'concat']
+      files: 'src/**/*.js', tasks: ['jshint', 'uglify']
     }
   }
     // all of our configuration will go here
