@@ -1,0 +1,38 @@
+.todo-content {
+  width: 600px;
+  margin-left: 50px;
+}
+
+.todo-new-task {
+  display: block;
+}
+
+.todo-new-task-title {
+  display: inline-block;
+  width: 580px;
+}
+
+.todo-new-task-action {
+  display: inline-block;
+  float: right;
+  margin-top: 5px;
+  margin-left: 2px;
+}
+
+.task-content {
+  display: block;
+}
+
+.task-index {
+  display: inline-block;
+}
+
+.task-title {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.task-actions {
+  display: inline-block;
+  float: right;
+}
