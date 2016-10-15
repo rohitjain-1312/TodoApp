@@ -1,8 +1,32 @@
 <div ng-controller="homeCtrl">
-  <h1>This is home page</h1>
-  Enter your First Name: <input type="text" ng-model="firstName"><br>
-  Enter your last Name: <input type="text" ng-model="lastName"><br>
-
-  Your Name: {{firstName}}<br>
-  <button ng-click="update()">Update</button>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-list-alt"></span></a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="todo-content">
+    <div class="form-group todo-new-task">
+      <div class="todo-new-task-title">
+        <input type="text" class="form-control" placeholder="Add a new task here..." ng-model="newTaskTitle">
+      </div>
+      <div class="todo-new-task-action">
+        <span class="glyphicon glyphicon-plus" ng-click="addTask()"></span>
+      </div>
+    </div>
+    <ul class="list-group">
+      <li ng-repeat="task in tasks" track by $index class="list-group-item">
+        <todo-task></todo-task>
+      </li>
+    </ul>
+  </div>
 </div>
